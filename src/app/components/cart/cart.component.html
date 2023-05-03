@@ -1,0 +1,53 @@
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a routerLink="/products">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Cart</li>
+  </ol>
+</nav>
+
+<ng-container *ngIf="true">
+    <div class="card-table d-flex">
+        <div class="cart-product">
+            <div class="table table-responsive">
+                <thead>
+                    <tr>
+                        <th>Sr.No</th>
+                        <th>Product Name</th>
+                        <th>Product Image</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <td>1</td>
+                    <td>Iphone</td>
+                    <td>Some Image</td>
+                    <td>This is branded phone</td>
+                    <th>50 000,00</th>
+                    <td>1</td>
+                    <td>50 000,00</td>
+                    <td>
+                        <button class="btn btn-danger btn-primary" style="background-color: rgb(226, 0, 0);">Delete</button>
+                    </td>
+                </tbody>
+            </div>
+        </div>
+    </div>
+</ng-container>
+
+<ng-container *ngIf="false">
+    <div class="container">
+        <div class="card">
+            <h5 class="card-title">My carts</h5>
+        </div>
+        <div class="center">
+            <img src="https://www.nicepng.com/png/detail/322-3224210_your-cart-is-currently-empty-empty-shopping-cart.png" alt="">
+            <h4>Your cart is empty</h4>
+            <h6>Add item to it now</h6>
+            <button class="btn btn-primary">Shop Now</button>
+        </div>
+    </div>
+</ng-container>
